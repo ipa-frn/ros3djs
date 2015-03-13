@@ -21,7 +21,7 @@
 ROS3D.Viewer = function(options) {
   var that = this;
   options = options || {};
-  var divID = options.divID;
+  var div = options.div;
   var width = options.width;
   var height = options.height;
   var background = options.background || '#111111';
@@ -103,7 +103,7 @@ ROS3D.Viewer = function(options) {
   }
 
   // add the renderer to the page
-  document.getElementById(divID).appendChild(this.renderer.domElement);
+  div.appendChild(this.renderer.domElement);
 
   // begin the animation
   draw();
