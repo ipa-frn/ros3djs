@@ -1190,7 +1190,7 @@ ROS3D.InteractiveMarkerControl = function(options) {
         // get the current pose as a ROSLIB.Pose...
         var newPose = new ROSLIB.Pose({
           position : markerHelper.position,
-          quaternion : markerHelper.quaternion
+          orientation : markerHelper.quaternion
         });
         // so we can apply the transform provided by the TFClient
         newPose.applyTransform(new ROSLIB.Transform(transformMsg));
@@ -2969,7 +2969,7 @@ ROS3D.SceneNode.prototype.updatePose = function(pose) {
 ROS3D.Viewer = function(options) {
   var that = this;
   options = options || {};
-  var divID = options.divID;
+  var div = options.div;
   var width = options.width;
   var height = options.height;
   var background = options.background || '#111111';
@@ -3051,7 +3051,7 @@ ROS3D.Viewer = function(options) {
   }
 
   // add the renderer to the page
-  document.getElementById(divID).appendChild(this.renderer.domElement);
+  div.appendChild(this.renderer.domElement);
 
   // begin the animation
   draw();
