@@ -1,0 +1,22 @@
+{
+  "name": "ros3djs",
+  "description": "Fork of RobotWebTools' ros3djs",
+  "devDependencies": {
+    "eventemitter2": "https://github.com/hij1nx/EventEmitter2.git#^0.4.14",
+    "roslib": "https://github.com/RobotWebTools/roslibjs.git#^0.14.0",
+    "three.js": "https://github.com/mrdoob/three.js.git#r61",
+    "ColladaLoader2": "http://cdn.robotwebtools.org/ColladaAnimationCompress/0.0.2/ColladaLoader2.js"
+  },
+  "resolutions": {
+    "eventemitter2": "0.4.14",
+    "roslib": "^0.14.0"
+  },
+  "dependencies": {
+    "eventemitter2": "http://cdn.robotwebtools.org/EventEmitter2/0.4.14/eventemitter2.js",
+    "three": "http://cdn.robotwebtools.org/threejs/r61/three.js",
+    "ColladaLoader": "http://cdn.robotwebtools.org/threejs/r61/ColladaLoader.js",
+    "STLLoader": "http://cdn.robotwebtools.org/threejs/r61/STLLoader.js",
+    "ColladaLoader2": "http://cdn.robotwebtools.org/ColladaAnimationCompress/0.0.2/ColladaLoader2.js",
+    "roslib": "http://cdn.robotwebtools.org/roslibjs/0.14.0/roslib.js"
+  }
+}
